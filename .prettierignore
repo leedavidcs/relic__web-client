@@ -1,0 +1,7 @@
+build/**/*
+config/**/*
+coverage/**/*
+logs/**/*
+public/**/*
+scripts/**/*
+test-reports/**/*
