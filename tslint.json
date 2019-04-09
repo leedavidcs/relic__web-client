@@ -1,0 +1,25 @@
+{
+	"extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+	"linterOptions": {
+		"exclude": [
+			"build/**",
+			"coverage/**",
+			"node_modules/**",
+			"public/**",
+			"test-reports/**",
+			"**/*.{js,jsx}",
+			"**/*.jss.ts"
+		]
+	},
+	"rules": {
+		"align": [false],
+		"curly": [true, "ignore-same-line"],
+		"max-classes-per-file": false,
+		"max-line-length": {
+			"options": [120]
+		},
+		"no-console": true,
+		"semicolon": [true, "always"],
+		"trailing-comma": false
+	}
+}
