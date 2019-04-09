@@ -1,9 +1,9 @@
 <a name="web-client"></a>
 # Web-Client
 <div align="center">
-	<img src="https://img.shields.io/github/package-json/v/leedavidcs/web-client.svg">
-	<a href="https://travis-ci.com/leedavidcs/web-client">
-		<img src="https://travis-ci.com/leedavidcs/web-client.svg?branch=master">
+	<img src="https://img.shields.io/github/package-json/v/mua-inc/web-client.svg">
+	<a href="https://travis-ci.com/mua-inc/web-client">
+		<img src="https://travis-ci.com/mua-inc/web-client.svg?branch=master">
 	</a>
 	<a href="https://sonarcloud.io/dashboard?id=web-client&branch=master">
 		<img src="https://sonarcloud.io/api/project_badges/measure?project=web-client&metric=alert_status">
@@ -20,8 +20,8 @@
 	<a href="https://sonarcloud.io/dashboard?id=web-client&branch=master">
 		<img src="https://sonarcloud.io/api/project_badges/measure?project=web-client&metric=code_smells">
 	</a>
-	<img src="https://img.shields.io/github/repo-size/leedavidcs/web-client.svg">
-	<img src="https://img.shields.io/github/issues-pr/leedavidcs/web-client.svg">
+	<img src="https://img.shields.io/github/repo-size/mua-inc/web-client.svg">
+	<img src="https://img.shields.io/github/issues-pr/mua-inc/web-client.svg">
 </div>
 
 ---
