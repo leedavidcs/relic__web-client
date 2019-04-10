@@ -1,14 +1,14 @@
 {
-	"name": "web-client",
+	"name": "mua_web-client",
 	"version": "0.1.0",
 	"private": false,
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/leedavidcs/web-client.git"
+		"url": "https://github.com/mua-inc/mua_web-client.git"
 	},
-	"homepage": "https://github.com/leedavidcs/web-client.git#readme",
+	"homepage": "https://github.com/mua-inc/mua_web-client.git#readme",
 	"bugs": {
-		"url": "https://github.com/leedavidcs/web-client.git/issues"
+		"url": "https://github.com/mua-inc/mua_web-client.git/issues"
 	},
 	"scripts": {
 		"audit-ci": "audit-ci --config=./config/audit-ci.config.json",
