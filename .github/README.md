@@ -1,32 +1,32 @@
-<a name="web-client"></a>
-# Web-Client
+<a name="mua_web-client"></a>
+# Mua_web-Client
 <div align="center">
-	<img src="https://img.shields.io/github/package-json/v/mua-inc/web-client.svg">
-	<a href="https://travis-ci.com/mua-inc/web-client">
-		<img src="https://travis-ci.com/mua-inc/web-client.svg?branch=master">
+	<img src="https://img.shields.io/github/package-json/v/mua-inc/mua_web-client.svg">
+	<a href="https://travis-ci.com/mua-inc/mua_web-client">
+		<img src="https://travis-ci.com/mua-inc/mua_web-client.svg?branch=master">
 	</a>
-	<a href="https://sonarcloud.io/dashboard?id=web-client&branch=master">
-		<img src="https://sonarcloud.io/api/project_badges/measure?project=web-client&metric=alert_status">
+	<a href="https://sonarcloud.io/dashboard?id=mua_web-client&branch=master">
+		<img src="https://sonarcloud.io/api/project_badges/measure?project=mua_web-client&metric=alert_status">
 	</a>
-	<a href="https://sonarcloud.io/dashboard?id=web-client&branch=master">
-		<img src="https://sonarcloud.io/api/project_badges/measure?project=web-client&metric=coverage">
+	<a href="https://sonarcloud.io/dashboard?id=mua_web-client&branch=master">
+		<img src="https://sonarcloud.io/api/project_badges/measure?project=mua_web-client&metric=coverage">
 	</a>
-	<a href="https://sonarcloud.io/dashboard?id=web-client&branch=master">
-		<img src="https://sonarcloud.io/api/project_badges/measure?project=web-client&metric=sqale_rating">
+	<a href="https://sonarcloud.io/dashboard?id=mua_web-client&branch=master">
+		<img src="https://sonarcloud.io/api/project_badges/measure?project=mua_web-client&metric=sqale_rating">
 	</a>
-	<a href="https://sonarcloud.io/dashboard?id=web-client&branch=master">
-		<img src="https://sonarcloud.io/api/project_badges/measure?project=web-client&metric=sqale_index">
+	<a href="https://sonarcloud.io/dashboard?id=mua_web-client&branch=master">
+		<img src="https://sonarcloud.io/api/project_badges/measure?project=mua_web-client&metric=sqale_index">
 	</a>
-	<a href="https://sonarcloud.io/dashboard?id=web-client&branch=master">
-		<img src="https://sonarcloud.io/api/project_badges/measure?project=web-client&metric=code_smells">
+	<a href="https://sonarcloud.io/dashboard?id=mua_web-client&branch=master">
+		<img src="https://sonarcloud.io/api/project_badges/measure?project=mua_web-client&metric=code_smells">
 	</a>
-	<img src="https://img.shields.io/github/repo-size/mua-inc/web-client.svg">
-	<img src="https://img.shields.io/github/issues-pr/mua-inc/web-client.svg">
+	<img src="https://img.shields.io/github/repo-size/mua-inc/mua_web-client.svg">
+	<img src="https://img.shields.io/github/issues-pr/mua-inc/mua_web-client.svg">
 </div>
 
 ---
 
-<a name="web-client-frontend-development"></a>
+<a name="mua_web-client-frontend-development"></a>
 ## Frontend Development
 
 This project is a frontend [React](https://reactjs.org/) application that is written in [TypeScript](https://www.typescriptlang.org/).
@@ -37,7 +37,7 @@ State management is done through [Redux](https://redux.js.org/). Asynchronous st
 
 Testing is done through [Jest](https://jestjs.io/), [Enzyme](https://airbnb.io/enzyme/docs/api/), and [Storybook](https://storybook.js.org/).
 
-<a name="web-client-ci-pipeline"></a>
+<a name="mua_web-client-ci-pipeline"></a>
 ## CI Pipeline
 
 This project uses [Github](https://github.com/) as its SCM.
@@ -50,7 +50,7 @@ The build stages are as follows, in order:
 * `format` - Ensures that the code follows prettier rules.
 * `test` - Runs test-coverage and code-quality checks. New and old code must have greater than 80% coverage. Code-quality rules are specified and configured via [SonarCloud](https://sonarcloud.io/).
 
-<a name="web-client-steps-to-get-started"></a>
+<a name="mua_web-client-steps-to-get-started"></a>
 ## Steps to get Started
 * Clone this repository.
 * Install Node.js
@@ -77,36 +77,36 @@ The build stages are as follows, in order:
 		* Go to `More options` -> `Settings`
 		* Add a new Environment Variable, `SONAR_TOKEN`, using the token you generated in the 	previous step.
 
-<a name="web-client-installing-dependencies"></a>
+<a name="mua_web-client-installing-dependencies"></a>
 ## Installing Dependencies
 * `npm install`
 
-<a name="web-client-running-the-starter"></a>
+<a name="mua_web-client-running-the-starter"></a>
 ## Running the Starter
 * Build client in watch mode: `npm run build:dev`
 * Run frontend server in watch mode: `npm run start:server:watch`
 * View the application on: `localhost:8080`
 
-<a name="web-client-running-tests"></a>
+<a name="mua_web-client-running-tests"></a>
 ## Running Tests
 * `npm test`
 
-<a name="web-client-running-linter"></a>
+<a name="mua_web-client-running-linter"></a>
 ## Running Linter
 * `npm run lint`
 
-<a name="web-client-running-formatter"></a>
+<a name="mua_web-client-running-formatter"></a>
 ## Running Formatter
 * `npm run format`
 
-<a name="web-client-fixing-formatting-errors"></a>
+<a name="mua_web-client-fixing-formatting-errors"></a>
 ## Fixing Formatting Errors
 * `npm run format:fix`
 
-<a name="web-client-updating-changelog"></a>
+<a name="mua_web-client-updating-changelog"></a>
 ## Updating CHANGELOG
 * See [@geut/chan](https://github.com/geut/chan)
 
-<a name="web-client-opening-a-pull-request"></a>
+<a name="mua_web-client-opening-a-pull-request"></a>
 ## Opening a Pull Request
 - `https://github.com/[organization]/[repo-name]/compare/[base-branch]...[compare-branch]?expand=1&template=main.md`
