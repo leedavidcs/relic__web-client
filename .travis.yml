@@ -1,0 +1,29 @@
+language: node_js
+node_js:
+  - "10.15.1"
+cache: npm
+stages:
+  - audit
+  - lint
+  - format
+  - test
+script: echo "disable first npm test"
+jobs:
+  include:
+    - stage: audit
+    - script: npm run audit-ci
+
+    - stage: lint
+      script: npm run lint
+
+    - stage: format
+      script: npm run format
+
+    - stage: test
+      addons:
+        sonarcloud:
+          organization: mua-inc
+      script:
+        - npm run test:sonar
+        - sonar-scanner
+        - ./scripts/wait-sonar-quality-gate.sh $SONAR_TOKEN sonarcloud.io ./.scannerwork/report-task.txt
