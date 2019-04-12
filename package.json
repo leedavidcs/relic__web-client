@@ -11,7 +11,7 @@
 		"url": "https://github.com/mua-inc/mua_web-client.git/issues"
 	},
 	"scripts": {
-		"audit-ci": "audit-ci --config=./config/audit-ci.config.json",
+		"audit-ci": "audit-ci --moderate --report --package-manager npm",
 		"build:dev": "webpack --config scripts/dev.config.js --watch",
 		"build:prod": "node scripts/build.js",
 		"create-readme": "ts-node --files ./scripts/generate-readme",
@@ -69,6 +69,8 @@
 		"@types/fs-extra": "^5.0.5",
 		"@types/helmet": "0.0.42",
 		"@types/history": "^4.7.2",
+		"@types/koa": "^2.0.48",
+		"@types/koa-router": "^7.0.40",
 		"@types/lodash": "^4.14.121",
 		"@types/morgan": "^1.7.35",
 		"@types/node": "^11.13.2",
@@ -102,6 +104,8 @@
 		"identity-obj-proxy": "3.0.0",
 		"jss": "^9.8.7",
 		"jss-preset-default": "^4.5.0",
+		"koa": "^2.7.0",
+		"koa-router": "^7.4.0",
 		"lodash": "^4.17.11",
 		"mini-css-extract-plugin": "0.5.0",
 		"morgan": "^1.9.1",
@@ -168,7 +172,7 @@
 			"react-app-polyfill/jsdom"
 		],
 		"setupFilesAfterEnv": [
-			"<rootDir>/config/setup-tests.ts"
+			"<rootDir>/.jest/setup-tests.ts"
 		],
 		"testMatch": [
 			"<rootDir>/(src|server)/**/*.(spec|test).{ts,tsx}",
@@ -179,8 +183,8 @@
 		"transform": {
 			"^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
 			"^.+\\.tsx?$": "ts-jest",
-			"^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
-			"^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/config/jest/fileTransform.js"
+			"^.+\\.css$": "<rootDir>/.jest/cssTransform.js",
+			"^(?!.*\\.(js|jsx|ts|tsx|css|json)$)": "<rootDir>/.jest/fileTransform.js"
 		},
 		"transformIgnorePatterns": [
 			"[/\\\\]node_modules[/\\\\].+\\.(js|jsx|ts|tsx)$",

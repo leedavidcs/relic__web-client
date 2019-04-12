@@ -1,7 +1,0 @@
-{
-	"moderate": true,
-	"report": true,
-	"package-manager": "npm",
-	"advisories": [],
-	"whitelist": []
-}
