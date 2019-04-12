@@ -12,8 +12,8 @@
 	},
 	"scripts": {
 		"audit-ci": "audit-ci --moderate --report --package-manager npm",
-		"build:dev": "webpack --config scripts/dev.config.js --watch",
-		"build:prod": "node scripts/build.js",
+		"build:dev": "webpack --config scripts/build/dev.config.js --watch",
+		"build:prod": "node scripts/build",
 		"create-readme": "ts-node --files ./scripts/generate-readme",
 		"docker": "npm run docker:build && npm run docker:run",
 		"docker:build": "docker build . -t react-docker",
