@@ -3,8 +3,8 @@ import Http, { RequestListener } from "http";
 import Koa, { Context } from "koa";
 import KoaRouter from "koa-router";
 import Path from "path";
-import { Router } from "./routes";
 import { applyHandlers } from "./handlers";
+import { Router } from "./routes";
 
 /**
  * @class Server
