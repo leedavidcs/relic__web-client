@@ -1,3 +1,6 @@
+.github/**/*
+.jest/**/*
+.README/**/*
 build/**/*
 config/**/*
 coverage/**/*
