@@ -13,6 +13,9 @@ const testInclusionPatterns: string[] = [
 ];
 
 const exclusionPatterns: string[] = [
+  ".github/**/*",
+  ".jest/**/*",
+  ".README/**/*",
   "build/**/*",
   "config/**/*",
   "coverage/**/*",
