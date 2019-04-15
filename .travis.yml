@@ -11,7 +11,9 @@ script: echo "disable first npm test"
 jobs:
   include:
     - stage: audit
-    - script: npm run audit-ci
+      script:
+        - if [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then npm run audit-ci; fi
+
 
     - stage: lint
       script: npm run lint
