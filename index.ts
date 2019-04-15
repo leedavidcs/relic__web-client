@@ -1,5 +1,10 @@
 import { Server } from "./server";
+import { Logger } from "./server/logger";
 
-export const frontend: Server = new Server(process.env.PORT);
+const PORT: number = Number(process.env.PORT) || 3000;
 
-frontend.run();
+export const frontend: Server = new Server(PORT);
+
+frontend.run().then(() => {
+	Logger.info(`Server is listening on port: ${PORT}.`);
+});

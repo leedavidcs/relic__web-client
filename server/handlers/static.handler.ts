@@ -1,8 +1,5 @@
-import Express, { RequestHandler } from "express";
+import { Middleware } from "koa";
+import KoaStatic from "koa-static";
 import Path from "path";
 
-const staticPaths: string[][] = [["build"]];
-
-export const StaticHandlers: RequestHandler[] = staticPaths.map<RequestHandler>((path) =>
-	Express.static(Path.join(__dirname, "../../", ...path))
-);
+export const StaticHandler: Middleware = KoaStatic(Path.join(__dirname, "../../build"));
