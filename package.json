@@ -150,7 +150,7 @@
 		"collectCoverageFrom": [
 			"src/**/*.{ts,tsx}",
 			"server/**/*.{ts,tsx}",
-			"*.{ts,tsx}",
+			"tests/**/*.{ts,tsx}",
 			"!build/**/*",
 			"!config/**/*",
 			"!coverage/**/*",
@@ -175,7 +175,8 @@
 		],
 		"testMatch": [
 			"<rootDir>/(src|server)/**/*.(spec|test).{ts,tsx}",
-			"<rootDir>/*.(spec|test).{ts,tsx}"
+			"<rootDir>/*.(spec|test).{ts,tsx}",
+			"<rootDir>/tests/**/*.ts"
 		],
 		"testEnvironment": "jsdom",
 		"testURL": "http://localhost",
