@@ -16,11 +16,15 @@ describe("Server", () => {
 		expect(typeof Server).toBe("function");
 	});
 
-	it("Should run the server", async () => {
-		await server.run();
+	it(
+		"Should run the server",
+		async () => {
+			await server.run();
 
-		expect(server.isRunning).toBe(true);
-	}, INIT_SERVER_SPIN_TIMEOUT);
+			expect(server.isRunning).toBe(true);
+		},
+		INIT_SERVER_SPIN_TIMEOUT
+	);
 
 	it("Should return an instance of an http server", () => {
 		expect(server.instance instanceof Http.Server).toBe(true);

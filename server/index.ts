@@ -60,7 +60,6 @@ export class Server {
 
 		this.app.use(this.router.routes());
 		this.app.use(this.router.allowedMethods());
-
 	}
 
 	private serveClient(): void {

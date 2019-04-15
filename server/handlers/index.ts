@@ -4,11 +4,7 @@ import { LoggerHandler } from "./logger.handler";
 import { StaticHandler } from "./static.handler";
 
 export const applyHandlers = (app: Koa): void => {
-	const handlers: Middleware[] = [
-		StaticHandler,
-		LoggerHandler,
-		BodyParserHandler
-	];
+	const handlers: Middleware[] = [StaticHandler, LoggerHandler, BodyParserHandler];
 
 	handlers.forEach((handler) => {
 		app.use(handler);
