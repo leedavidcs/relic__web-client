@@ -2,28 +2,27 @@ import { writeFile } from "fs-extra";
 import { Environment, FileSystemLoader } from "nunjucks";
 import ReadPkg, { Package } from "read-pkg";
 
+// sonar.sources
 const sourcePaths: string[] = [
   "./server",
   "./src"
 ];
 
+// sonar.tests
+const testPaths: string[] = [
+  "./server",
+  "./src",
+  "./tests"
+];
+
+// sonar.test.inclusions
 const testInclusionPatterns: string[] = [
   "**/*test.ts",
   "**/*test.tsx"
 ];
 
+// sonar.exclusions
 const exclusionPatterns: string[] = [
-  ".github/**/*",
-  ".jest/**/*",
-  ".README/**/*",
-  "build/**/*",
-  "config/**/*",
-  "coverage/**/*",
-  "logs/**/*",
-  "node_modules/**/*",
-  "public/**/*",
-  "scripts/**/*",
-  "test-reports/**/*",
   "**/*test.ts",
   "**/*test.tsx",
   "**/*.js",
@@ -44,12 +43,14 @@ const main = async (): Promise<never> => {
   const testInclusions: string = testInclusionPatterns.join(",");
   const exclusions: string = exclusionPatterns.join(",");
   const sources: string = sourcePaths.join(",");
+  const tests: string = testPaths.join(",");
 
   const fileContents: string = environmnent.render("sonar-project.njk", {
     exclusions,
     pkg,
     sources,
-    testInclusions
+    testInclusions,
+    tests
   });
 
   await writeFile("sonar-project.properties", fileContents);
